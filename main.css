@@ -1,0 +1,236 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #f2f6e9;
+}
+
+/*--- navigation bar ---*/
+.navbar {
+	background: #1e3f75;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #1e3f75;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	color: lightgray;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/*--- header ---*/
+
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #6ab446;
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+/*--- feature section ---*/
+
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+
+.features .btn {
+	background-color: yellow;
+	border: 1px solid yellow;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.features .btn:hover {
+	background-color: #333;
+	border: 1px lightgray;
+}
+
+/*--- footer ---*/
+
+.page-footer {
+	background-color: #005eab;
+	color: #ccc;
+	padding: 60px 0 30px;
+}
+
+.footer-copyright {
+	background-color: #1e3f75;
+	color: lightgray;
+	padding: 40px 0;
+}
+
+/*--- media queries ---*/
+
+@media (max-width: 575.98px) {
+
+	.description {
+		left: 0;
+		padding: 0 15px;
+		position: absolute;
+		top: 10%;
+		transform: none;
+		text-align: center;
+	}
+	
+	.description h1 {
+		font-size: 2rem;
+	}
+	
+	.description p {
+		font-size: 1.2rem;
+	}
+	
+	.features {
+		margin: 0;
+	}
+
+}
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: lightgray;
+	background-color: transparent;
+}
+
+/*Scroll to Top Button*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #5e6163;
+	color: lightgray;
+	cursor: pointer;
+	margin: 3%;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	opacity: 0.75;
+}
+#myBtn:hover {
+	background-color: #83868a;
+	opacity: 0.75;
+}
+
+/*Form Text Fields*/
+
+#rcorners2 {
+	margin: 0px;
+	box-shadow: none;
+	border-top-color: transparent;
+	border-top-style: initial;
+	border-top-width: 0px;
+	border-right-color: transparent;
+	border-right-style: initial;
+	border-right-width: 0px;
+	border-bottom-color: transparent;
+	border-bottom-style: initial;
+	border-bottom-width: 0px;
+	border-left-color: transparent;
+	border-left-style: initial;
+	border-left-width: 0px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 20px; 
+	width: 70%;
+	height: 10%;   
+	z-index: 10;
+	background-color: white;
+	opacity: 0.75;
+	margin: 1%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0.75;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 0.1;
+  right: 0;
+}
